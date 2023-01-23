@@ -96,23 +96,16 @@ header.header {
     z-index: 0;
 }
 
-.intro-main-item .slider .slider-body .page:nth-child(1) {
-    background-color: green;
-}
-
-.intro-main-item .slider .slider-body .page:nth-child(2) {
-    background-color: blue;
-}
-
-.intro-main-item .slider .slider-body .page:nth-child(3) {
-    background-color: red;
-}
-
 .intro-main-item .slider .slider-body .page .pre-img {
     background-color: #707070;
-    width: min(45%, );
+    width: max(45%, 200px);
     height: 100%;
     border-radius: 6vw;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8rem;
 }
 
 .intro-main-item .slider .slider-body .page p {
@@ -154,7 +147,9 @@ header.header {
 /* main-------------------------------------- */
 /* ------------------------------------------ */
 /* recipe------------------------------------ */
-
+.intro-recipe {
+    background-color: #ffebeb;
+}
 
 .intro-recipe > .title {
     display: inline-flex;
@@ -171,14 +166,20 @@ header.header {
     margin-top: 15%;
     width: 100%;
     aspect-ratio: 16/9;
-    border: 1px solid #000;
+    position: relative;
+}
+
+.intro-recipe .item .title {
+    margin-top: 0.6%;
+    font-size: 6rem;
+    color: var(--page-color);
 }
 
 .intro-recipe .item .pre-img {
     width: 65%;
     aspect-ratio: 16/9;
     border-radius: 4vw;
-    margin: 4% auto;
+    margin: 3.4% auto;
     background-color: #707070;
 }
 
@@ -203,4 +204,67 @@ header.header {
     border-top: calc(var(--width) * 1.732) solid #fff;
     border-left: var(--width) solid transparent;
     border-right: var(--width) solid transparent;
+    transform: rotateX(0deg);
+    transition: transform .4s;
+}
+
+.intro-recipe .item:has(.view-more:checked) label .triangle {
+    transform: rotateX(180deg);
+    transition: transform .4s;
+}
+
+.view-more {
+    display: none;
+}
+
+.intro-recipe .item .popup {
+    background-color: var(--page-color);
+    font-size: 3.6rem;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    border-radius: 3vw;
+    width: 70%;
+    max-height: 80vh;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+    top: 6rem;
+    z-index: -3;
+    opacity: 0;
+    transition: opacity .1s;
+    color: #fff;
+}
+
+
+.intro-recipe .item .view-more:checked + .popup {
+    z-index: 5;
+    opacity: 1;
+    /* transform: translate(0, 100%); */
+    transition: opacity .1s;
+}
+
+.intro-recipe .item .popup > * {
+    overflow-wrap: break-word;
+    width: calc(45% - 1.5em);
+    margin-left: 1.5em;
+    /* border: 1px solid #000; */
+}
+
+.intro-recipe .item .popup li {
+    margin-top: 2rem;
+}
+
+.site.intro::after {
+    content: '';
+    background-color: #ffebeb;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -5;
 }
