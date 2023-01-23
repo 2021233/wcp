@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/intro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
     <title>チーズ紹介 - 江別市とcheeseでおいしく健康を!</title>
 </head>
+
 <body>
     <div class="site intro font-yasashisa">
-        
+
         <header class="header">
             <h2 class="header-title">江別市とチーズでおいしく健康を!</h2>
             <div class="header-menu">
@@ -21,22 +26,91 @@
                 <a href="">ふるさと納税について</a>
             </div>
         </header>
-        
-       <div class="intro-main">
-        <img src="./img/intro-main.png" alt="">
-       </div>
-        
+
+        <div class="intro-main">
+            <div class="main_visual">
+                <div class="bubble">
+                    <p>チーズ紹介</p>
+                </div>
+                <img src="./img/intro-main.png" alt="">
+            </div>
+
+            <div class="intro-main-item">
+                <p class="title">チーズの健康効果について</p>
+
+                <div class="slider">
+                    <div class="slider-button prev">
+                        <div class="arrow"></div>
+                    </div>
+
+                    <div class="slider-body">
+                        <div class="pre-img"></div>
+
+                        <p>
+                            チーズは、「人間の身体に必要な栄養素の多くがバランスよく含まれている食べ物」です。<br>
+                            栄養素で欠けているものは、ビタミンCと食物繊維。<br>
+                            野菜と果物と一緒にチーズを食べれば栄養バランスが上がります。<br>
+                            チーズの主成分は22~28%がたんぱく質、25~30%が脂質です。<br>
+                            その他、ミネラルやビタミンC以外のビタミンをバランスよく含んでいます。
+                        </p>
+                    </div>
+
+                    <div class="slider-button next">
+                        <div class="arrow"></div>
+                    </div>
+                </div>
+
+                <div class="page">
+                    <div class="page-dot">
+                        <div class="current"></div>
+                    </div>
+                    <div class="page-dot">
+                        <div class=""></div>
+                    </div>
+                    <div class="page-dot">
+                        <div class=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
         <footer class="footer">
             <img src="./img/footer_grass.svg" alt="">
             <ul>
-                <li><h2>tiitoru</h2></li>
+                <li>
+                    <h2>tiitoru</h2>
+                </li>
                 <li><a href="">子育てサポート</a></li>
                 <li><a href="">チーズ紹介</a></li>
                 <li><a href="">ショップ</a></li>
                 <li><a href="">ふるさと納税について</a></li>
             </ul>
         </footer>
-        
+
     </div>
+    <!-- <script>
+        let i = 0;
+        const slider = () => {
+            let dots = document.querySelectorAll('.page-dot');
+
+
+            for (let j = 0; j < dots.length; j++) {
+                dots[j].firstElementChild.removeAttribute('class');
+                console.log('j = ' + j);
+            }
+            
+            dots[i % 3].firstElementChild.setAttribute('class', 'current');
+            
+            i++;
+            
+            console.log(i);
+            
+            setTimeout('slider()', 5000);
+        }
+        
+        slider();
+    </script> -->
 </body>
+
 </html>
