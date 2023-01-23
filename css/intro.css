@@ -185,10 +185,22 @@ header.header {
 .intro-recipe .item label {
     display: flex;
     width: 40%;
-    aspect-ratio: 8/1;
-    align-items: start;
+    aspect-ratio: 11/2;
+    align-items: center;
     justify-content: space-between;
-    padding: 0 10%;
-    border: 1px solid #000;
+    padding: 0 5% 0 calc(20% - 3em);
     margin: 0 auto;
+    font-size: min(4rem, 3vw);
+    border-radius: 200px;
+    color: #fff;
+    background-color: var(--page-color);
+}
+
+.intro-recipe .item label .triangle {
+    --width: 1vw;
+    width: 0;
+    height: 0;
+    border-top: calc(var(--width) * 1.732) solid #fff;
+    border-left: var(--width) solid transparent;
+    border-right: var(--width) solid transparent;
 }
