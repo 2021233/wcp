@@ -64,7 +64,6 @@ header.header {
     width: 100%;
     aspect-ratio: 31/25;
     padding: 5% 0;
-    border: 1px solid #707070;
 }
 
 .intro-main-item .title {
@@ -75,35 +74,62 @@ header.header {
 .intro-main-item .slider {
     width: 90%;
     aspect-ratio: 51/25;
-    border: 1px solid #707070;
     margin-bottom: 7%;
 }
 
-.intro-main-item .slider .slider-body .pre-img {
+.intro-main-item .slider .slider-body .page {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: opacity .3s;
+    z-index: 4;
+}
+
+.intro-main-item .slider .slider-body .page.hidden {
+    opacity: 0;
+    transition: opacity .3s;
+    z-index: 0;
+}
+
+.intro-main-item .slider .slider-body .page:nth-child(1) {
+    background-color: green;
+}
+
+.intro-main-item .slider .slider-body .page:nth-child(2) {
+    background-color: blue;
+}
+
+.intro-main-item .slider .slider-body .page:nth-child(3) {
+    background-color: red;
+}
+
+.intro-main-item .slider .slider-body .page .pre-img {
     background-color: #707070;
     width: 45%;
     height: 100%;
     border-radius: 6vw;
 }
 
-
-.intro-main-item .slider .slider-body p {
+.intro-main-item .slider .slider-body .page p {
     width: 45%;
     font-size: min(3rem, 1.6vw);
     overflow-wrap: break-word;
 }
 
 
-.intro-main-item .page {
+.intro-main-item .paging {
     display: flex;
     width: 15%;
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid #000;
 }
 
-.intro-main-item .page .page-dot {
+.intro-main-item .paging .page-dot {
     width: 2.4rem;
     aspect-ratio: 1;
     background-color: #acacac;
@@ -111,7 +137,7 @@ header.header {
     overflow: hidden;
 }
 
-.intro-main-item .page .page-dot div {
+.intro-main-item .paging .page-dot div {
     width: 100%;
     height: 100%;
     background-color: var(--page-color);
@@ -119,7 +145,11 @@ header.header {
     transition: opacity .4s ease-in-out;
 }
 
-.intro-main-item .page .page-dot .current {
+.intro-main-item .paging .page-dot .current {
     opacity: 1;
     transition: opacity .4s ease-in-out;
 }
+
+/* main-------------------------------------- */
+/* ------------------------------------------ */
+/* recipe------------------------------------ */

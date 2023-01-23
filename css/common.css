@@ -188,6 +188,13 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    opacity: 1;
+    transition: opacity .3s;
+}
+
+.slider .slider-button.hidden {
+    opacity: 0;
+    transition: opacity .3s;
 }
 
 .slider .slider-button .arrow {
@@ -220,4 +227,5 @@ a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
