@@ -127,7 +127,7 @@
     width: 40%;
     aspect-ratio: 1;
     border-radius: 3vw;
-    border: 1rem solid var(--page-colorcolor);
+    border: 1rem solid var(--page-color);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -140,7 +140,7 @@
 
 .tax-main .goods .wrapper:nth-child(4) .pre-img {
     background-size: 160%;
-    background-image: url(../img/hrst＿.png);
+    background-image: url(../img/hrst.png);
 }
 
 .tax-main .goods .wrapper .bubble {
@@ -161,7 +161,30 @@
     transform: scaleY(.8);
 }
 
+.tax-main .goods .wrapper:nth-child(3) .bubble::after {
+    border-left: calc(var(--width) * 1.732) solid var(--page-color);
+    border-bottom: var(--width) solid transparent;
+    border-right: var(--width) solid transparent;
+    bottom: 50%;
+    right: calc(var(--width) * -1 - 1.2em);
+    left: unset;
+    transform: scaleY(.8);
+}
+
 .tax-main .goods .wrapper .bubble p:first-child {
     text-align: center;
     margin-bottom: 1em;
+}
+
+.tax-main .goods > a {
+    display: flex;
+    font-size: 3rem;
+    border-radius: 3em;
+    width: 30%;
+    padding: 1.2em;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--page-color);
+    margin:  min(40vh, 20%) auto min(20vh, 10%);
+    color: #fff;
 }

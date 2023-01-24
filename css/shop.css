@@ -78,12 +78,12 @@
 }
 
 .shop-main-item>.slider .slider-body .page:nth-child(2) .pre-img {
-    background-image: url(../img/baked-cheese.tif);
+    background-image: url(../img/baked-cheese.png);
 }
 
-/* .shop-main-item > .slider .slider-body .page:nth-child(3) .pre-img {
+.shop-main-item > .slider .slider-body .page:nth-child(3) .pre-img {
     background-image: url(../img/);
-} */
+}
 
 .shop-main-item .slider .slider-body .page p {
     font-size: 4rem;
@@ -159,9 +159,9 @@
     background-image: url(../img/souffule.jpg);
 }
 
-/* .shop-main-item .item .slider .slider-body .page:nth-child(3) .pre-img {
-    background-image: url(../img/);
-}     */
+.shop-main-item .item .slider .slider-body .page:nth-child(3) .pre-img {
+    background-image: url(../img/IMG_kamann.png);
+}
 
 .shop-main-item .item .slider .slider-body .page .wrapper {
     width: 50%;

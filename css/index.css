@@ -109,12 +109,30 @@
 }
 
 .pre-img {
-    border: 1px solid #000;
     --circle-size: 1287px;
     width: var(--circle-size);
     height: var(--circle-size);
     border-radius: 50%;
     color: unset;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.index-main-item:nth-child(2) .pre-img {
+    background-image: url(../img/white-cheese.png);
+}
+
+.index-main-item:nth-child(3) .pre-img {
+    background-image: url(../img/shop_top.jpg);
+}
+
+.index-main-item:nth-child(4) .pre-img {
+    background-image: url(../img/child.jpeg);
+}
+
+.index-main-item:nth-child(5) .pre-img {
+    background-image: url(../img/usi.jpg);
 }
 
 .about-text:has(+ .pre-img),

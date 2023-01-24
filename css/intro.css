@@ -57,6 +57,21 @@
     height: 100%;
     border-radius: 6vw;
     font-size: 8rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.intro-main-item .slider .slider-body .page:nth-child(1) .pre-img {
+    background-image: url(../img/white-cheese.png);
+}
+
+.intro-main-item .slider .slider-body .page:nth-child(2) .pre-img {
+    background-image: url(../img/IMG_kuri-mu.png);
+}
+
+.intro-main-item .slider .slider-body .page:nth-child(3) .pre-img {
+    background-image: url(../img/cream-cheese.jpg);
 }
 
 .intro-main-item .slider .slider-body .page p {
@@ -119,14 +134,14 @@
     background-image: url(../img/cheese-cake.png);
 }
 
-/* 
+
 .intro-recipe .item:nth-of-type(2) .pre-img {
-    background-image: url(../img/cheese.png);
+    background-image: url(../img/harumaki.png);
 }
 
 .intro-recipe .item:nth-of-type(3) .pre-img {
-    background-image: url(../img/cheese-cake.png);
-} */
+    background-image: url(../img/ringo.png);
+}
 
 .intro-recipe .item label {
     display: flex;
