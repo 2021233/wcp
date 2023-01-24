@@ -5,11 +5,15 @@
     --uvh: .926vh;
 }
 
+.site.index header.header {
+    color: #505050;
+}
+
 /* root-------------------------------------- */
 /* ------------------------------------------ */
 /* main-visual------------------------------- */
 
-.index-main .main_visual {
+.index .index-main .main_visual {
     background-image:
         url(../img/index_main_bgimg_red.svg),
         url(../img/index_main_bgimg_orange.svg);
@@ -113,6 +117,7 @@
     width: var(--circle-size);
     height: var(--circle-size);
     border-radius: 50%;
+    color: unset;
 }
 
 .about-text:has(+ .pre-img),

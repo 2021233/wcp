@@ -1,7 +1,34 @@
+:root {
+    --header: 267px;
+    --footer: 550px;
+    --uvw: 1.042vw;
+    --uvh: .926vh;
+    --page-color: #8bd3d3;
+}
+
+/* root-------------------------------------- */
+/* ------------------------------------------ */
+/* main-visual------------------------------- */
+
 .shop-main .main_visual {
-    background-image: url(../img/.jpg);
+    background-image: url(../img/shop-main-bg.svg);
+    aspect-ratio: 1922/1101;
+    padding: 0 4.4% 0 13%;
+
+}
+
+.shop-main .main_visual img:first-of-type {
+    margin-top: min(17%, 7vh);
+    margin-left: 10%;
+    width: 16%;
+}
+
+.shop-main .main_visual .pre-img {
+    width: 28.5%;
+    height: 50%;
 }
 
 /* main-visual------------------------------- */
 /* ------------------------------------------ */
-/* footer------------------------------------ */
+/* main-------------------------------------- */
+

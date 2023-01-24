@@ -8,24 +8,10 @@
 
 /* root-------------------------------------- */
 /* ------------------------------------------ */
-/* header------------------------------------ */
-
-header.header {
-    color: #fff;
-}
-
-/* header------------------------------------ */
-/* ------------------------------------------ */
 /* main-visual------------------------------- */
 
 .intro-main .main_visual {
     background-image: url(../img/intro-main-bg.svg);
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    color: var(--page-color);
-    padding: 0 0 0 13%;
-    justify-content: space-between;
 }
 
 .intro-main .main_visual img {
@@ -39,7 +25,7 @@ header.header {
 .intro-main-item {
     width: 100%;
     aspect-ratio: 31/25;
-    padding: 5% 0;
+    padding: 0 0 0 13%;
 }
 
 .intro-main-item .title {
@@ -73,7 +59,6 @@ header.header {
 }
 
 .intro-main-item .slider .slider-body .page .pre-img {
-    background-color: #707070;
     width: max(45%, 200px);
     height: 100%;
     border-radius: 6vw;

@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'YasashisaGothicBoldV2';
-    src: url('../font/YasashisaGothicBold-V2.otf') format('turetype');
+    src: url('../font/YasashisaGothicBold-V2.otf') format('truetype');
 }
 
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
@@ -56,6 +56,12 @@ a:hover {
     text-align: left;
 }
 
+.pre-img {
+    min-width: 20px;
+    min-height: 20px;
+    background-color: #707070;
+}
+
 @media (width > 768px) {
     .sp-display {
         display: block;
@@ -91,6 +97,7 @@ a:hover {
     justify-content: center;
     text-align: center;
     align-items: center;
+    color: #fff;
     
     z-index: 1;
 }
@@ -167,13 +174,16 @@ a:hover {
 
 .main_visual {
     width: 100%;
-    /* height: 1100px; */
     aspect-ratio: 19/12;
-    padding-top: var(--header);
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: var(--page-color);
+    justify-content: space-between;
 }
 
 .main_visual .bubble {
