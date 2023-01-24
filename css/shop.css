@@ -32,3 +32,19 @@
 /* ------------------------------------------ */
 /* main-------------------------------------- */
 
+.shop-main-item .slider {
+    width: 90%;
+    aspect-ratio: 11/9;
+}
+
+.shop-main-item .slider .slider-body {
+    justify-content: center;
+    overflow: hidden;
+}
+
+.shop-main-item .slider .slider-body .page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #000;
+}
