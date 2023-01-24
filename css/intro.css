@@ -1,6 +1,6 @@
 :root {
     --header: clamp(80px, 30vh, 267px);
-    --footer: clamp(200px,60vh,550px);
+    --footer: clamp(200px, 60vh, 550px);
     --uvw: 1.042vw;
     --uvh: .926vh;
     --page-color: #e86d6d;
@@ -78,10 +78,10 @@
 /* recipe------------------------------------ */
 .intro-recipe {
     background-color: #ffebeb;
-    padding-bottom: 30vh;   
+    padding-bottom: 30vh;
 }
 
-.intro-recipe > .title {
+.intro-recipe>.title {
     display: inline-flex;
     width: 100%;
     font-size: 6rem;
@@ -162,7 +162,7 @@
     display: none;
 }
 
-.intro-recipe .item .view-more + .popup {
+.intro-recipe .item .view-more+.popup {
     background-color: var(--page-color);
     font-size: 3rem;
     padding: 2em;
@@ -185,13 +185,13 @@
 }
 
 
-.intro-recipe .item .view-more:checked + .popup {
+.intro-recipe .item .view-more:checked+.popup {
     z-index: 5;
     opacity: 1;
     transition: opacity .1s;
 }
 
-.intro-recipe .item .popup > * {
+.intro-recipe .item .popup>* {
     overflow-wrap: break-word;
     width: 50%;
 }
@@ -202,7 +202,7 @@
     padding-left: 1em;
 }
 
-.intro-recipe .item .popup > *:last-child > *:last-child {
+.intro-recipe .item .popup>*:last-child>*:last-child {
     margin-top: 1.2em;
 }
 

@@ -1,6 +1,6 @@
 :root {
     --header: clamp(80px, 30vh, 267px);
-    --footer: clamp(200px,60vh,550px);
+    --footer: clamp(200px, 60vh, 550px);
     --uvw: 1.042vw;
     --uvh: .926vh;
 }
@@ -17,7 +17,7 @@
     background-image:
         url(../img/index_main_bgimg_red.svg),
         url(../img/index_main_bgimg_orange.svg);
-        background-repeat:
+    background-repeat:
         no-repeat,
         no-repeat;
     background-position:

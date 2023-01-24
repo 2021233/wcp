@@ -1,0 +1,166 @@
+:root {
+    --header: clamp(80px, 30vh, 267px);
+    --footer: clamp(200px, 60vh, 550px);
+    --uvw: 1.042vw;
+    --uvh: .926vh;
+    --page-color: #addb95;
+}
+
+.site.tax {
+    padding-bottom: calc(var(--footer) - 30vh);
+}
+
+/* root-------------------------------------- */
+/* ------------------------------------------ */
+/* main-visual------------------------------- */
+
+.tax-main .main_visual {
+    background-image: url(../img/tax-main-bg.svg);
+    aspect-ratio: 1922/1101;
+    padding: 0 14% 0 13%;
+    margin-bottom: min(20vh, 10%);
+}
+
+.tax-main .main_visual .bubble {
+    width: 50vw;
+    aspect-ratio: 13/5;
+}
+
+.tax-main .main_visual img {
+    width: 18%;
+    transform: translateY(10%);
+}
+
+/* main-visual------------------------------- */
+/* ------------------------------------------ */
+/* main-------------------------------------- */
+
+.tax-main .item {
+    width: 80%;
+    margin: 0 auto;
+    /* height: 100vh; */
+}
+
+.tax-main .item .bubble {
+    background-color: var(--page-color);
+    color: #fff;
+    font-size: 3rem;
+    aspect-ratio: unset;
+    margin-left: 6%;
+    width: 36%;
+    padding: 1.2em;
+    border-radius: 1em;
+    margin-bottom: 3em;
+}
+
+.tax-main .item .bubble::after {
+    border-top: calc(var(--width) * 1.732) solid var(--page-color);
+    border-right: var(--width) solid transparent;
+    border-left: var(--width) solid transparent;
+    bottom: calc(var(--width) * -1 - .8em);
+    right: 18%;
+    transform: scaleX(.8);
+}
+
+.tax-main .item>.title {
+    font-size: 6rem;
+    margin-bottom: 4em;
+}
+
+.tax-main .item>.title span {
+    color: var(--page-color);
+}
+
+.tax-main .item .wrapper {
+    width: 100%;
+    aspect-ratio: 12/5;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: start;
+    background-color: var(--page-color);
+    border-radius: 4em;
+    color: #fff;
+    padding: 2em 6em 3em;
+}
+
+.tax-main .item .wrapper .title {
+    font-size: 5rem;
+}
+
+.tax-main .item .wrapper {
+    font-size: 3.2rem;
+}
+
+
+/* main-visual------------------------------- */
+/* ------------------------------------------ */
+/* main-------------------------------------- */
+
+.tax-main .goods {
+    margin-top: min(24vh, 12%);
+    background-color: #eaffde;
+    padding-bottom: 30vh;
+}
+
+.tax-main .goods .title {
+    display: flex;
+    font-size: 6rem;
+    width: 100%;
+    height: 5em;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--page-color);
+    color: #fff;
+}
+
+.tax-main .goods .wrapper {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: min(30vh, 15%);
+}
+
+.tax-main .goods .wrapper .pre-img {
+    width: 40%;
+    aspect-ratio: 1;
+    border-radius: 3vw;
+    border: 1rem solid var(--page-colorcolor);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.tax-main .goods .wrapper:nth-child(2) .pre-img {
+    background-size: 140%;
+    background-image: url(../img/rakunouhurusato.png);
+}
+
+.tax-main .goods .wrapper:nth-child(3) .pre-img {
+    background-image: url(../img/rakunouhurusato.png);
+}
+
+.tax-main .goods .wrapper .bubble {
+    flex-flow: column nowrap;
+    font-size: 3.6rem;
+    background-color: var(--page-color);
+    color: #fff;
+    width: 50%;
+    padding: 1.6em;
+}
+
+.tax-main .goods .wrapper .bubble::after {
+    border-right: calc(var(--width) * 1.732) solid var(--page-color);
+    border-top: var(--width) solid transparent;
+    border-left: var(--width) solid transparent;
+    bottom: 50%;
+    left: calc(var(--width) * -1 - 1.2em);
+    transform: scaleY(.8);
+}
+
+.tax-main .goods .wrapper .bubble p:first-child {
+    text-align: center;
+    margin-bottom: 1em;
+}

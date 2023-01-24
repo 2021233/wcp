@@ -1,6 +1,6 @@
 :root {
     --header: clamp(80px, 30vh, 267px);
-    --footer: clamp(200px,60vh,550px);
+    --footer: clamp(200px, 60vh, 550px);
     --uvw: 1.042vw;
     --uvh: .926vh;
     --page-color: #ffd667;
@@ -30,7 +30,7 @@
 /* ------------------------------------------ */
 /* main-------------------------------------- */
 
-.support-main .item{
+.support-main .item {
     display: flex;
     width: 100%;
     justify-content: start;
@@ -38,7 +38,7 @@
     margin-top: min(20vh, 10%);
 }
 
-.support-main .item:nth-child(2){
+.support-main .item:nth-child(2) {
     padding: 0 6%;
 }
 
@@ -58,7 +58,7 @@
     font-size: 3.6rem;
 }
 
-.support-main .item:nth-child(3){
+.support-main .item:nth-child(3) {
     padding: 0 0 0 6%;
     justify-content: end;
     overflow: hidden;
@@ -113,7 +113,7 @@
     background-position: center center;
 }
 
-.support-main .item:nth-child(4){
+.support-main .item:nth-child(4) {
     justify-content: space-between;
     height: 60vh;
     background-color: var(--page-color);
@@ -121,19 +121,19 @@
     padding: 12vh 3% 0;
 }
 
-.support-main .item:nth-child(4) img{
+.support-main .item:nth-child(4) img {
     width: 20%;
 }
 
-.support-main .item:nth-child(4) img:first-of-type{
+.support-main .item:nth-child(4) img:first-of-type {
     transform: rotate(-12deg);
 }
 
-.support-main .item:nth-child(4) img:last-of-type{
+.support-main .item:nth-child(4) img:last-of-type {
     transform: rotate(14deg);
 }
 
-.support-main .item:nth-child(4) p{
+.support-main .item:nth-child(4) p {
     color: #fff;
     font-size: 4rem;
     text-align: center;
