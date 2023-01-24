@@ -12,6 +12,7 @@
 
 .intro-main .main_visual {
     background-image: url(../img/intro-main-bg.svg);
+    padding: 0 0 0 13%;
 }
 
 .intro-main .main_visual img {
@@ -25,7 +26,6 @@
 .intro-main-item {
     width: 100%;
     aspect-ratio: 31/25;
-    padding: 0 0 0 13%;
 }
 
 .intro-main-item .title {
@@ -62,10 +62,6 @@
     width: max(45%, 200px);
     height: 100%;
     border-radius: 6vw;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 8rem;
 }
 
@@ -180,7 +176,7 @@
 
 .intro-recipe .item .popup {
     background-color: var(--page-color);
-    font-size: 3.6rem;
+    font-size: 3rem;
     padding: 1em;
     display: flex;
     align-items: center;

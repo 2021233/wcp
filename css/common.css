@@ -23,7 +23,7 @@
 }
 
 html {
-    font-size: 62.5%;
+    font-size: min(62.5%, .6vw);
 }
 
 a,
@@ -51,15 +51,21 @@ a:hover {
     text-align: center;
 }
 
-.body {
+body {
     font-size: 2.2rem;
     text-align: left;
+    color: #505050;
 }
 
 .pre-img {
     min-width: 20px;
     min-height: 20px;
     background-color: #707070;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 @media (width > 768px) {

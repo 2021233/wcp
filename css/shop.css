@@ -32,6 +32,14 @@
 /* ------------------------------------------ */
 /* main-------------------------------------- */
 
+.shop-main-item {
+    padding-top: 11%;
+}
+
+.shop-main-item .title {
+    margin-bottom: 7%;
+}
+
 .shop-main-item .slider {
     width: 90%;
     aspect-ratio: 11/9;
@@ -47,4 +55,22 @@
     width: 100%;
     height: 100%;
     border: 1px solid #000;
+}
+
+.shop-main-item .slider .slider-body .page .pre-img {
+    width: 100%;
+    aspect-ratio: 7/4;
+    border-radius: 3vw;
+    font-size: 6rem;
+}
+
+.shop-main-item .slider .slider-body .page p {
+    font-size: 4rem;
+    text-align: left;
+    padding: 0 0.5em;
+    margin-top: 1.2em;
+}
+
+.shop-main-item .slider .slider-body .page .title {
+    color: var(--page-color);
 }

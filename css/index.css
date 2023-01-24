@@ -110,9 +110,6 @@
 
 .pre-img {
     border: 1px solid #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     --circle-size: 1287px;
     width: var(--circle-size);
     height: var(--circle-size);
