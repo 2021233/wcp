@@ -18,9 +18,123 @@
     background-image: url(../img/support-main-bg.svg);
     aspect-ratio: 1922/1101;
     padding: 0 12% 0 13%;
+    margin-bottom: min(10vh, 5%);
 }
 
 .support-main .main_visual img {
     width: 38%;
     transform: translateY(10%);
+}
+
+/* main-visual------------------------------- */
+/* ------------------------------------------ */
+/* main-------------------------------------- */
+
+.support-main .item{
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    align-items: center;
+    margin-top: min(20vh, 10%);
+}
+
+.support-main .item:nth-child(2){
+    padding: 0 6%;
+}
+
+.support-main .item:nth-child(2) .pre-img {
+    width: 45%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    margin: 0 2.5%;
+    background-image: url(../img/child.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.support-main .item:nth-child(2) p {
+    width: 40%;
+    font-size: 3.6rem;
+}
+
+.support-main .item:nth-child(3){
+    padding: 0 0 0 6%;
+    justify-content: end;
+    overflow: hidden;
+}
+
+.support-main .item:nth-child(3) .wrapper {
+    width: 50%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    height: 100%;
+}
+
+.support-main .item:nth-child(3) .wrapper .bubble {
+    background-color: var(--page-color);
+    color: #fff;
+    font-size: 4rem;
+    width: 60%;
+    padding: 0.5em;
+    aspect-ratio: unset;
+    border-radius: 3rem;
+    margin-bottom: 3em;
+}
+
+.support-main .item:nth-child(3) .wrapper .bubble::after {
+    border-top: calc(var(--width) * 1.732) solid var(--page-color);
+    border-right: var(--width) solid transparent;
+    border-left: var(--width) solid transparent;
+    bottom: calc(var(--width) * -1 - .8em);
+    right: 38%;
+    transform: scaleX(.8);
+}
+
+.support-main .item:nth-child(3) .wrapper .title {
+    color: var(--page-color);
+    font-size: 6rem;
+    margin-bottom: 2em;
+}
+
+.support-main .item:nth-child(3) .wrapper p:last-child {
+    font-size: 3.6rem;
+}
+
+.support-main .item:nth-child(3) .pre-img {
+    width: 55%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    margin-right: -5%;
+    background-image: url(../img/sansyou04.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.support-main .item:nth-child(4){
+    justify-content: space-between;
+    height: 60vh;
+    background-color: var(--page-color);
+    align-items: start;
+    padding: 12vh 3% 0;
+}
+
+.support-main .item:nth-child(4) img{
+    width: 20%;
+}
+
+.support-main .item:nth-child(4) img:first-of-type{
+    transform: rotate(-12deg);
+}
+
+.support-main .item:nth-child(4) img:last-of-type{
+    transform: rotate(14deg);
+}
+
+.support-main .item:nth-child(4) p{
+    color: #fff;
+    font-size: 4rem;
+    text-align: center;
 }
