@@ -175,8 +175,9 @@
     position: absolute;
     right: 0;
     left: 0;
+    top: 14%;
+    bottom: 20%;
     margin: auto;
-    top: 12%;
     z-index: -3;
     opacity: 0;
     transition: opacity .1s, z-index .1s .2s;
@@ -203,4 +204,8 @@
 
 .intro-recipe .item .popup > *:last-child > *:last-child {
     margin-top: 1.2em;
+}
+
+.intro-recipe .item .popup a {
+    text-decoration: underline;
 }
