@@ -192,7 +192,7 @@ body {
     justify-content: space-between;
 }
 
-.main_visual .bubble {
+.bubble {
     width: 38.4%;
     aspect-ratio: 11/6;
     display: flex;
@@ -204,7 +204,7 @@ body {
     position: relative;
 }
 
-.main_visual .bubble:after {
+.bubble:after {
     content: '';
     position: absolute;
     --width: 3rem;
@@ -271,6 +271,7 @@ body {
 .slider .slider-body {
     width: 74%;
     height: 100%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;

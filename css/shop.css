@@ -6,6 +6,10 @@
     --page-color: #8bd3d3;
 }
 
+.site.shop {
+    padding-bottom: calc(var(--footer) - 30vh);
+}
+
 /* root-------------------------------------- */
 /* ------------------------------------------ */
 /* main-visual------------------------------- */
@@ -14,7 +18,6 @@
     background-image: url(../img/shop-main-bg.svg);
     aspect-ratio: 1922/1101;
     padding: 0 4.4% 0 13%;
-
 }
 
 .shop-main .main_visual img:first-of-type {
@@ -43,6 +46,7 @@
 .shop-main-item .slider {
     width: 90%;
     aspect-ratio: 11/9;
+    margin: 0 auto 13%;
 }
 
 .shop-main-item .slider .slider-body {
@@ -73,4 +77,70 @@
 
 .shop-main-item .slider .slider-body .page .title {
     color: var(--page-color);
+}
+
+/* main-------------------------------------- */
+/* ------------------------------------------ */
+/* goods------------------------------------- */
+
+.shop-main-item .item {
+    background-color: var(--page-color);
+    padding: 7% 7% calc(30vh + 7%);
+}
+
+.shop-main-item .item .title {
+    display: block;
+    width: 24%;
+    font-size: 4rem;
+    margin: 0 auto 3em;
+    color: var(--page-color);
+    border-radius: 2em;
+    padding: 0.4em;
+    aspect-ratio: unset;
+}
+
+.shop-main-item .item .title::after {
+    border-top: calc(var(--width) * 1.732) solid #fff;
+    border-right: var(--width) solid transparent;
+    border-left: var(--width) solid transparent;
+    bottom: calc(var(--width) * -1 - .8em);
+    right: 38%;
+    transform: scaleX(.8);
+}
+
+.shop-main-item .item .slider {
+    aspect-ratio: 5/2;
+}
+
+.shop-main-item .item .slider .slider-body {
+    width: 90%;
+    
+}
+
+.shop-main-item .item .slider .slider-body .page {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: start;
+}
+
+.shop-main-item .item .slider .slider-body .page .pre-img {
+    width: 40%;
+    height: unset;
+    aspect-ratio: 1;
+    margin: 0 5%;
+    border-radius: 50%;
+    border: .4vw solid #fff;
+}
+
+.shop-main-item .item .slider .slider-body .page .wrapper {
+    width: 50%;
+    height: 100%;
+    color: #fff;
+}
+
+.shop-main-item .item .slider .slider-body .page .wrapper .title {
+    color: #fff;
+    font-size: 5rem;
+    margin: 0;
+    width: 100%;
 }
