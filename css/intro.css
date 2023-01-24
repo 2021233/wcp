@@ -28,30 +28,6 @@ header.header {
     justify-content: space-between;
 }
 
-.intro-main .main_visual .bubble {
-    width: 38.4%;
-    aspect-ratio: 11/6;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #fff;
-    border-radius: 3vw;
-    font-size: 6rem;
-    position: relative;
-}
-
-.intro-main .main_visual .bubble:after {
-    content: '';
-    position: absolute;
-    --width: 3rem;
-    border-left: calc(var(--width) * 1.732) solid #fff;
-    border-top: var(--width) solid transparent;
-    border-bottom: var(--width) solid transparent;
-    height: 0;
-    width: 0;
-    right: calc(-1.7 * var(--width));
-}
-
 .intro-main .main_visual img {
     width: 60%;
 }

@@ -7,6 +7,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
 
+:root {
+    --header: 267px;
+    --footer: 550px;
+    --uvw: 1.042vw;
+    --uvh: .926vh;
+}
 
 *,
 *::before,
@@ -91,6 +97,7 @@ a:hover {
 
 .header-title {
     font-size: 3.2rem;
+    font-weight: bold;
 }
 
 .header-menu {
@@ -167,6 +174,30 @@ a:hover {
     align-items: center;
     justify-content: center;
     position: relative;
+}
+
+.main_visual .bubble {
+    width: 38.4%;
+    aspect-ratio: 11/6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 3vw;
+    font-size: 6rem;
+    position: relative;
+}
+
+.main_visual .bubble:after {
+    content: '';
+    position: absolute;
+    --width: 3rem;
+    border-left: calc(var(--width) * 1.732) solid #fff;
+    border-top: var(--width) solid transparent;
+    border-bottom: var(--width) solid transparent;
+    height: 0;
+    width: 0;
+    right: calc(-1.7 * var(--width));
 }
 
 /* main_visual------------------------------- */
