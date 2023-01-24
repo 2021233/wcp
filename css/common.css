@@ -8,8 +8,8 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
 
 :root {
-    --header: 267px;
-    --footer: 550px;
+    --header: clamp(80px, 30vh, 267px);
+    --footer: clamp(200px,60vh,550px);
     --uvw: 1.042vw;
     --uvh: .926vh;
 }
@@ -276,4 +276,45 @@ body {
     justify-content: space-between;
     align-items: center;
     position: relative;
+}
+
+.slider .slider-body .page {
+    position: absolute;
+    opacity: 1;
+    transition: opacity .3s;
+    z-index: 4;
+}
+
+.slider .slider-body .page.hidden {
+    opacity: 0;
+    transition: opacity .3s;
+    z-index: 0;
+}
+
+
+.paging {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.paging .page-dot {
+    width: 2.4rem;
+    aspect-ratio: 1;
+    background-color: #acacac;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.paging .page-dot div {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity .4s ease-in-out;
+}
+
+.paging .page-dot .current {
+    opacity: 1;
+    transition: opacity .4s ease-in-out;
 }

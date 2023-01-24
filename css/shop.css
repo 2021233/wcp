@@ -1,6 +1,6 @@
 :root {
-    --header: 267px;
-    --footer: 550px;
+    --header: clamp(80px, 30vh, 267px);
+    --footer: clamp(200px,60vh,550px);
     --uvw: 1.042vw;
     --uvh: .926vh;
     --page-color: #8bd3d3;
@@ -21,14 +21,16 @@
 }
 
 .shop-main .main_visual img:first-of-type {
-    margin-top: min(17%, 7vh);
-    margin-left: 10%;
     width: 16%;
+    position: absolute;
+    top: 14%;
+    right: 29%;
+    z-index: 2;
 }
 
-.shop-main .main_visual .pre-img {
-    width: 28.5%;
-    height: 50%;
+.shop-main .main_visual img:last-of-type {
+    width: 52.5%;
+    transform: translateY(6%);
 }
 
 /* main-visual------------------------------- */
@@ -41,6 +43,7 @@
 
 .shop-main-item .title {
     margin-bottom: 7%;
+    color: var(--page-color);
 }
 
 .shop-main-item .slider {
@@ -58,7 +61,6 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    border: 1px solid #000;
 }
 
 .shop-main-item .slider .slider-body .page .pre-img {
@@ -143,4 +145,12 @@
     font-size: 5rem;
     margin: 0;
     width: 100%;
+}
+
+.shop-main-item .paging {
+    width: 15%;
+}
+
+.shop-main-item .paging .page-dot div {
+    background-color: #e86d6d;
 }
