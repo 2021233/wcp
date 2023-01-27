@@ -26,7 +26,8 @@
     background-size:
         79.8%,
         70%;
-}
+        justify-content: center;
+}       
 
 .main_visual .cheese {
     width: min(51.5%, 981px);
