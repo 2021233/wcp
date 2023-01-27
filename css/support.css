@@ -118,7 +118,7 @@
     height: 60vh;
     background-color: var(--page-color);
     align-items: start;
-    padding: 12vh 3% 0;
+    padding: 12vh 3% 70vh;
 }
 
 .support-main .item:nth-child(4) img {

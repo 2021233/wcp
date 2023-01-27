@@ -157,6 +157,7 @@
 
 .shop-main-item .item .slider .slider-body .page:nth-child(2) .pre-img {
     background-image: url(../img/souffule.jpg);
+    background-size: 120%;
 }
 
 .shop-main-item .item .slider .slider-body .page:nth-child(3) .pre-img {
