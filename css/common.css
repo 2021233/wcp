@@ -41,14 +41,15 @@ a:hover {
     font-family: 'YasashisaGothicBoldV2', sans-serif;
 }
 
+.title {
+    font-family: 'YasashisaGothicBoldV2', sans-serif;
+    font-size: 4rem;
+    text-align: center;
+}
+
 .font-rounded {
     font-family: 'M PLUS Rounded 1c', sans-serif;
     font-weight: 400;
-}
-
-.title {
-    font-size: 4rem;
-    text-align: center;
 }
 
 body {
@@ -104,7 +105,7 @@ body {
     text-align: center;
     align-items: center;
     color: #fff;
-
+    font-family: 'YasashisaGothicBoldV2', sans-serif;
     z-index: 1;
 }
 
@@ -136,6 +137,7 @@ body {
     right: 0;
     display: flex;
     flex-flow: column nowrap;
+    font-family: 'YasashisaGothicBoldV2', sans-serif;
 }
 
 .footer img {

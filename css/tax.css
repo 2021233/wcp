@@ -138,6 +138,12 @@
     background-image: url(../img/rakunouhurusato.png);
 }
 
+.tax-main .goods .wrapper:nth-child(3) .pre-img {
+    background-size: 200%;
+    background-position: bottom right;
+    background-image: url(../img/set.jpg);
+}
+
 .tax-main .goods .wrapper:nth-child(4) .pre-img {
     background-size: 160%;
     background-image: url(../img/hrst.png);
